@@ -1,0 +1,28 @@
+.navbar-custom {
+	margin-top: 110px;
+	border: 0px;
+	background-color: #a2b6cb;
+	border-radius: 0px;
+	color: #222e45;
+	text-align: center;
+	margin: 10px auto 10px auto;
+}
+
+.nav-fcol {
+	color:#222e45;
+}
+
+.a {
+	color:#222e45;
+	text-decoration: none;
+}
+
+body {
+	background-color: #222e45;
+	color: #a2b6cb;
+	font-size: 20px;
+}
+
+.main-logo {
+	margin:110px auto auto auto;
+}
