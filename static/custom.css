@@ -24,5 +24,6 @@ body {
 }
 
 .main-logo {
-	margin:110px auto auto auto;
+	margin:20px auto auto auto;
+	text-align: center;
 }
