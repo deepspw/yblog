@@ -16,26 +16,28 @@
 			<img src="{{ url_for( 'static', filename='logo.png') }}">
 		</div>
 		<!-- Navbar -->
-
-		<nav class="navbar navbar-default navbar-custom cusa">
-			<div class="container-fluid nav-fcol">
-			<div class="navbar-header nav-fcol">
-				</button>
-			</div>
-
-			<div class="navbar-custom">
+		<svg class="dotted-line" height="2" width="100%">
+			<line x1="0" y1="0" x2="100%" y2="0"/>
+		</svg>
+		<nav class="navbar-custom">
 				<strong>
-				<a href='#'>Home</a>
-				<a href='reel'>reel</a>
-				<a href='scripts'>scripts</a>
-				<a href='about'>about</a>
-				<a href='cv'>cv</a>
-				<a href='contact'>contact</a>
-				<a href='blog'>blog</a>
-				<a href='doodles'>doodles</a>
+				<a href='#' class='navicons'>home</a>
+				<a href='reel' class='navicons'>reel</a>
+				<a href='scripts' class='navicons'>scripts</a>
+				<a href='about' class='navicons'>about</a>
+				<a href='cv' class='navicons'>cv</a>
+				<a href='contact' class='navicons'>contact</a>
+				<a href='blog' class='navicons'>blog</a>
+				<a href='doodles' class='navicons'>doodles</a>
 				</strong>
-			</div>
 		</nav>
+		<svg class="dotted-line" height="2" width="100%">
+			<line x1="0" y1="0" x2="100%" y2="0"/>
+		</svg>
+		<div class="blog-content">
+			<h1>{{ posttitle }}</h1>
+			<p>{{ postcontent }}</p>
+		</div>
 	<script src = "{{ url_for( 'static', filename='jquery-1.11.3.min.js') }}">
 	</script>
 	<script type = 'text/javascript' src = "{{ url_for( 'static', filename='bootstrap.min.js') }}"></script>
