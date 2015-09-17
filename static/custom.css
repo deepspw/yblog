@@ -1,16 +1,22 @@
-
+.regular-line {
+	stroke: #A2B6CB;
+	fill: none;
+	stroke-width: 4;
+	display: -webkit-box;
+}
 
 .dotted-line {
 	stroke: #A2B6CB;
 	fill: none;
-	stroke-width: 2;
-	stroke-dasharray: 8,4;
+	stroke-width: 4;
+	stroke-dasharray: 4,8;
 	display: -webkit-box;
 }
 
 .navicons {
 	margin-left: 10px;
 	margin-right: 10px;
+	font-weight: bold;
 }
 
 .blog-content {
@@ -18,14 +24,16 @@
 }
 
 .navbar-custom {
-	height: 32px;
+	height: 29px;
 	border: 0px;
 	background-color: #a2b6cb;
 	border-radius: 0px;
-	border-top
 	color: #222e45;
 	text-align: center;
-	margin: 1px auto 2px auto;
+	vertical-align: middle;
+	font-family: "arial";
+	font-weight: bold;
+	font-size: 12px;
 }
 
 .nav-fcol {
