@@ -12,37 +12,82 @@
 	</head>
 
 	<body>
-		<div class="main-logo">
-			<img src="{{ url_for( 'static', filename='logo.png') }}">
-		</div>
-		<!-- Navbar -->
-		<svg class="regular-line" height="2" width="100%">
-			<line x1="0" y1="0" x2="100%" y2="0"/>
-		</svg>
-		<svg class="dotted-line" height="2" width="100%">
-			<line x1="0" y1="0" x2="100%" y2="0"/>
-		</svg>
-		<nav class="navbar-custom">
-			<strong>
-			<a href='#' class='navicons'>home</a>
-			<a href='reel' class='navicons'>reel</a>
-			<a href='scripts' class='navicons'>scripts</a>
-			<a href='about' class='navicons'>about</a>
-			<a href='cv' class='navicons'>cv</a>
-			<a href='contact' class='navicons'>contact</a>
-			<a href='blog' class='navicons'>blog</a>
-			<a href='doodles' class='navicons'>doodles</a>
-			</strong>
-		</nav>
-		<svg class="dotted-line" height="2" width="100%">
-			<line x1="0" y1="0" x2="100%" y2="0"/>
-		</svg>
-		<svg class="regular-line" height="2" width="100%">
-			<line x1="0" y1="0" x2="100%" y2="0"/>
-		</svg>
-		<div class="blog-content">
-			<h1>{{ posttitle }}</h1>
-			<p>{{ postcontent }}</p>
+		<div class="container" height="1020" width="700">
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+				<div class="main-logo">
+				<img src="{{ url_for( 'static', filename='logo.png') }}">
+				</div>
+				</div>
+			</div>
+			<div class="row">
+				<svg class="regular-line" height="2" width="100%">
+					<line x1="0" y1="0" x2="100%" y2="0"/>
+				</svg>
+				<svg class="dotted-line" height="2" width="100%">
+					<line x1="0" y1="0" x2="100%" y2="0"/>
+				</svg>
+			</div>
+			<div class="row navbar-custom">
+				<div class="col-sm-2 col-md-2"></div>
+				<div class="col-sm-1 col-md-1">
+					<a href='#' class='navicons'>home</a>
+				</div>
+				<div class="col-sm-1 col-md-1">
+					<a href='reel' class='navicons'>reel</a>
+				</div>
+				<div class="col-sm-1 col-md-1">
+					<a href='scripts' class='navicons'>scripts</a>
+				</div>
+				<div class="col-sm-1 col-md-1">
+					<a href='about' class='navicons'>about</a>
+				</div>
+				<div class="col-sm-1 col-md-1">
+					<a href='cv' class='navicons'>cv</a>
+				</div>
+				<div class="col-sm-1 col-md-1">
+					<a href='contact' class='navicons'>contact</a>
+				</div>
+				<div class="col-sm-1 col-md-1">
+					<a href='contact' class='navicons'>blog</a>
+				</div>
+				<div class="col-sm-1 col-md-1">
+					<a href='contact' class='navicons'>doodles</a>
+				</div>
+				<div class="col-sm-2 col-md-2"/></div>
+			</div>
+			<div class="row">
+				<svg class="dotted-line" height="2" width="100%">
+					<line x1="0" y1="0" x2="100%" y2="0"/>
+				</svg>
+				<svg class="regular-line" height="2" width="100%">
+					<line x1="0" y1="0" x2="100%" y2="0"/>
+				</svg>
+			</div>
+
+			<!-- Main Body -->
+
+			<div class="row blog-content">
+
+				<!-- Post Content -->
+				<div class="col-md-12" style="height:14px;"></div>
+				<div class="col-sm-12 col-md-8">
+				<h1>{{ posttitle }}</h1>
+				<p>{{ postcontent }}</p>
+				</div>
+
+				<!-- Dotted Seperator -->
+				<div class="col-md-1" style="width:44px">
+					<svg class="dotted-line-horizontal" height: "100%" width="4">
+						<line x1="0" y1="0" x2="0" y2="100%"/>
+					</svg>
+				</div>
+				<!-- Sidebar -->
+				<div class="col-md-3">
+					<h1>Searchbar</h1>
+					<h1>Connections<h1>
+				</div>
+			</div>
 		</div>
 	<script src = "{{ url_for( 'static', filename='jquery-1.11.3.min.js') }}">
 	</script>
