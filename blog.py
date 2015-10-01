@@ -12,6 +12,10 @@ def homepage():
 	postcontent = "paragraph of content here"
 	return render_template("index.html", title = title , posttitle = posttitle, postcontent = postcontent)
 
+@app.route('/search')
+def search():
+	return render_template("index.html")
+
 @app.route('/reel/')
 def reel():
 	return render_template('index.html')

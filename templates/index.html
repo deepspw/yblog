@@ -54,8 +54,9 @@
 				<div class="col-sm-1 col-md-1">
 					<a href='contact' class='navicons'>doodles</a>
 				</div>
-				<div class="col-sm-2 col-md-2"/></div>
+				<div class="col-sm-2 col-md-2"></div>
 			</div>
+			
 			<div class="row">
 				<svg class="dotted-line" height="2" width="100%">
 					<line x1="0" y1="0" x2="100%" y2="0"/>
@@ -66,9 +67,6 @@
 			</div>
 
 			<!-- Main Body -->
-
-			<div class="row blog-content">
-
 				<!-- Post Content -->
 				<div class="col-md-12" style="height:14px;"></div>
 				<div class="col-sm-12 col-md-8">
@@ -77,18 +75,25 @@
 				</div>
 
 				<!-- Dotted Seperator -->
-				<div class="col-md-1" style="width:44px">
-					<svg class="dotted-line-horizontal" height: "100%" width="4">
+				<div class="col-md-1" style="width:2px">
+					<svg class="sub-dotted-line" height: "100%" width="2px">
 						<line x1="0" y1="0" x2="0" y2="100%"/>
 					</svg>
 				</div>
 				<!-- Sidebar -->
-				<div class="col-md-3">
-					<h1>Searchbar</h1>
-					<h1>Connections<h1>
+				<div class="col-md-3" style="width:240px;">
+					<form action="{{ url_for( 'search' ) }}" class="search-box">
+							<input type="text" name="search" maxlength="30" />
+					<img src="{{ url_for( 'static', filename='mag.png') }}" align="right"/>
+					</form>	
+					<div class="connect-content">
+						<a style="color:#ffffff; font-size:10px;">
+							Connect: </a>
+					<svg class="sub-dotted-line" height="2px" width="100%" style="color:#637389;">
+						<line x1="0" y1="0" x2="100%" y2="0"/>
+					</svg>
+					</div>
 				</div>
-			</div>
-		</div>
 	<script src = "{{ url_for( 'static', filename='jquery-1.11.3.min.js') }}">
 	</script>
 	<script type = 'text/javascript' src = "{{ url_for( 'static', filename='bootstrap.min.js') }}"></script>

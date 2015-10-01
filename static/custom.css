@@ -1,3 +1,23 @@
+.connect-content {
+	margin-top: 10px;
+	width: 240px;
+	font-size:10;
+	font-family: "arial";
+	font-weight: normal;
+	color: #ffffff;
+	display: -webkit-box;
+}
+
+input {
+	height: 20px;
+	width: 200px;
+}
+.search-box {
+	height: 20px;
+	width: 240px;
+	padding-bottom: 0px;
+}
+
 .regular-line {
 	stroke: #A2B6CB;
 	fill: none;
@@ -13,13 +33,13 @@
 	display: -webkit-box;
 }
 
-.dotted-line-horizontal {
+.sub-dotted-line {
 	stroke: #637389;
 	fill: none;
 	stroke-width: 4;
 	stroke-dasharray: 4,8;
-	display: -webkit-box;
 }
+
 
 .navicons {
 	margin-left: 10px;
